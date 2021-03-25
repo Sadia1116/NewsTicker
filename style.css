@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+  overflow-x: hidden;
+}
+#breaking {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5px;
+  background: red;
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#breaking,
+#newsTicker {
+  border: 2px solid rgb(43, 41, 41);
+}
+#newsTicker {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 8px 2px #2b2a2a;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 998;
+}
+.date {
+  margin-right: 10px;
+  text-decoration: underline;
+}
+.story {
+  margin-right: 20px;
+}
+#newsTicker p {
+  margin: 0;
+  display: inline-block;
+  font-size: 25px;
+  padding-left: 100%;
+  animation: tickerTape 60s linear infinite;
+}
+@keyframes tickerTape {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
